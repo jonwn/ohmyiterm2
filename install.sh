@@ -85,7 +85,8 @@ jetBrains_mono_font_latest_tag=`getTagNameOfLatestRelease ryanoasis/nerd-fonts`
 curl -# -O -J -L "https://github.com/ryanoasis/nerd-fonts/releases/download/${jetBrains_mono_font_latest_tag}/JetBrainsMono.zip"
 
 echo "开始安装ohmyzsh..."
-unzip -o -q ~/ohmyiterm2/ohmyzsh-master.zip -d ~/.oh-my-zsh
+unzip -o -q ~/ohmyiterm2/ohmyzsh-master.zip
+rsync -a ~/ohmyiterm2/ohmyzsh-master/ ~/.oh-my-zsh/
 cat ~/.oh-my-zsh/tools/install.sh | sed -e 's/setup_ohmyzsh$//g' | sed -e 's/-d "$ZSH"/-d "NULL"/g' | bash
 
 #安装插件
