@@ -5,7 +5,7 @@
 修改自 KingFalse 的 [ohmyiterm2](https://github.com/KingFalse/ohmyiterm2)，仓库内不再存放应用、插件及字体文件，安装时直接从官方下载
 
 ### 快速安装
-` sh -c "$(curl -fsSL https://raw.githubusercontent.com/itsRiver/ohmyiterm2/main/install.sh)"`
+` sh -c "$(curl -fsSL https://raw.githubusercontent.com/jonwn/ohmyiterm2/main/install.sh)"`
 
 ### 屏幕预览
 ![screenshot.png](screenshot.png "screenshot.png")
