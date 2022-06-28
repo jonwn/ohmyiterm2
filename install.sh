@@ -2,7 +2,7 @@
 
 sudo -v
 
-GITHUB_URL="https://codeload.github.com/itsRiver/ohmyiterm2/zip/main"
+GITHUB_URL="https://codeload.github.com/jonwn/ohmyiterm2/zip/main"
 
 chomp() {
   printf "%s" "${1/"$'\n'"/}"
@@ -123,6 +123,7 @@ echo "正在安装字体..."
 sudo unzip -o -q ~/ohmyiterm2/JetBrainsMono.zip -x "*Compatible.ttf" -d /Library/Fonts
 
 echo "正在安装iTerm2..."
+sudo rm -rf /Applications/iTerm.app
 sudo unzip -o -q ~/ohmyiterm2/iTerm2*.zip -d /Applications
 
 clearAll
